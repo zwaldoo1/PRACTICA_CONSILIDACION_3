@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat de Soporte - Estilo WhatsApp</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+
+<nav class="navbar">
+    <div class="navbar-mobile">
+        <button class="back-button">Atrás</button>
+        <button class="menu-button">Menú</button>
+    </div>
+    <div class="navbar-desktop">
+        <ul>
+            <li><a href="#">Principal</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="#">Manuales y tutoriales</a></li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Calendario</a></li>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Organigrama</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="chat-container">
+
+    <aside class="conversation-list">
+        <input type="text" class="search-bar" placeholder="Buscar conversaciones...">
+        <ul class="conversations">
+            <li class="conversation unread" data-chat="1" data-img="img/CARLOS.jpg">
+                <img src="img/CARLOS.jpg" alt="Carlos López" class="conversation-img">
+                <span class="conversation-name">Carlos López</span>
+                <span class="conversation-time">10:15 AM</span>
+            </li>
+            <li class="conversation" data-chat="2" data-img="img/ANA.jpg">
+                <img src="img/ANA.jpg" alt="Ana Pérez" class="conversation-img">
+                <span class="conversation-name">Ana Pérez</span>
+                <span class="conversation-time">Ayer</span>
+            </li>
+            <li class="conversation unread" data-chat="3" data-img="img/DAVID.jpg">
+                <img src="img/DAVID.jpg" alt="David González" class="conversation-img">
+                <span class="conversation-name">David González</span>
+                <span class="conversation-time">9:30 AM</span>
+            </li>
+            <li class="conversation" data-chat="4" data-img="img/LAURA.jpg">
+                <img src="img/LAURA.jpg" alt="Laura Romero" class="conversation-img">
+                <span class="conversation-name">Laura Romero</span>
+                <span class="conversation-time">Martes</span>
+            </li>
+            <li class="conversation unread" data-chat="5" data-img="img/PEDRO.jpg">
+                <img src="img/PEDRO.jpg" alt="Pedro Martínez" class="conversation-img">
+                <span class="conversation-name">Pedro Martínez</span>
+                <span class="conversation-time">11:45 AM</span>
+            </li>
+        </ul>
+    </aside>
+
+
+    <section class="current-chat">
+        <div class="chat-header">
+            <img src="/img/CARLOS.jpg" alt="Foto de perfil" class="profile-pic" id="current-profile-pic">
+            <span class="chat-username" id="chat-username">Carlos López</span>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+  
+        </div>
+        <div class="chat-input">
+            <div class="dropup">
+                <button class="dropup-button"><i class="fas fa-paperclip"></i></button>
+                <div class="dropup-content">
+                    <a href="#" id="attach-image"><i class="fas fa-image"></i> Imagen</a>
+                    <a href="#" id="attach-video"><i class="fas fa-video"></i> Video</a>
+                    <a href="#" id="attach-document"><i class="fas fa-file"></i> Documento</a>
+                </div>
+            </div>
+
+
+            <input type="text" placeholder="Escribe un mensaje..." id="message-input">
+            
+
+            <button class="send-button" id="send-button">&#9658;</button>
+        </div>
+
+<script src="script.js"></script>
+</body>
+</html>
